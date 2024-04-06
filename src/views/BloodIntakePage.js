@@ -148,14 +148,14 @@ function BloodIntake() {
     var bbs = [
       "Vijayee Blood Bank",
       "Prabodhan Blood Bank",
-      "Ridhi sidhi Blood Bank",
+      // "Ridhi sidhi Blood Bank",
       // "Bloodline Blood Bank",
       // "Samarpan Blood Centre",
     ];
     var locs = [
       "19.031413,73.016422",
       "19.159587,72.845633",
-      "19.043413,73.015516",
+      // "19.043413,73.015516",
       // "19.200753,72.974882",
       // "19.09339,72.913659",
     ];

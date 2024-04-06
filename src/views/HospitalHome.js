@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import Pdf from "react-to-pdf";
 import BlockchainContext from "../context/BlockChainContext";
 import QrReader from "react-qr-reader";
@@ -56,7 +56,7 @@ function HospitalHome() {
     setCode(data);
     // reader.current.reader.result
     console.log("data", reader.current.reader.result);
-    console.log("blooToBeSearched", bloodToBeSearched);
+    console.log("bloodToBeSearched", bloodToBeSearched);
     var h = bloodToBeSearched.adharNo
       .replaceAll(" ", "")
       .concat(bloodToBeSearched.bloodId)
@@ -77,7 +77,7 @@ function HospitalHome() {
 
   //----------------------------
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.body.classList.add("profile-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -158,7 +158,7 @@ function HospitalHome() {
     if (temp_arr_1[0]) {
       nearest = temp_arr_1[0][3];
       temp_loc = temp_arr_1[0][2];
-      updateBloodbankCord(temp_arr_1[0][2]); // save blood bank cordinates for further use like map
+      updateBloodbankCord(temp_arr_1[0][2]); // saving blood bank cordinates for further use in map
       const bb_em_1 = await contract.methods
         .getemail(nearest.toString())
         .call();
@@ -183,7 +183,7 @@ function HospitalHome() {
   const search = async (e) => {
     e.preventDefault();
     setLoading(true);
-    if (bloodToBeSearched.selectedBloodGroup !== "select") {
+    if (bloodToBeSearched.selectedBloodGroup !== "select") { 
       // 1.1 . search for nearest blood banks
       var b_count = await contract.methods.getBloodCount().call();
       var temp_dict_1 = {};
@@ -824,7 +824,7 @@ function HospitalHome() {
                 <div>
                   Address :{" "}
                   {
-                    " Husaini Colony, Vasai West, Vasai-Virar, Maharashtra 401202"
+                    " Priyadarshini, Sion Mumbai, Maharashtra 401202"
                   }
                 </div>
                 <br />

@@ -336,7 +336,7 @@ function BloodbankHome(props) {
             height="100%"
             width="100%"
           />
-          <h6 className="text-info" style={{fontWeight:"bolder" }}>{"⠀".repeat(25)}Loading Ruk Bhai Thoda Sabr Rakh!! . . . </h6>
+          <h6 className="text-info" style={{fontWeight:"bolder" }}>{"⠀".repeat(25)}Loading. . . </h6>
         </h5>
       </div>
     );

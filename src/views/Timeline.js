@@ -154,6 +154,10 @@ function Timeline(props) {
     }
   };
 
+  function changeButtonTextToSearching() {
+    const button = document.querySelector('.btn-round');
+    button.innerText = "Searching";
+  };
   return (
     <>
       <ExamplesNavbar urlname="login" />
@@ -229,7 +233,9 @@ function Timeline(props) {
                         block
                         className="btn-round"
                         color="info"
-                        onClick={formSubmit}
+                        onClick={
+                          formSubmit
+                        }
                       >
                         Track History
                       </Button>

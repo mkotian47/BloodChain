@@ -111,7 +111,7 @@ function EditDetails(props) {
           to_email: props.location.state.email,
           subject: `ACCEPTED: Regarding the blood you donated on` + ` ${props.location.state.collectionDate}`,
           blood_bank: props.location.state.currentBloodBank,
-          body: "Dear <b>"+`${props.location.state.name}`+"< /b> ,<br>< /br>Thanks for being a proud <b>"+`${props.location.state.bloodGroup}`+"< /b> donor. We appreciate your donation! Your contribution will help us change lives – literally! Someone who would have lost their life was spared because you gave us your blood. Someone’s quality of life was improved because you gave us your blood. We were able to help many because you gave us your blood. That’s pretty remarkable, and so are you. Thank you!",
+          body: "Dear "+`${props.location.state.name}`+",Thanks for being a proud "+`${props.location.state.bloodGroup}`+" donor. We appreciate your donation! Your contribution will help us change lives – literally! Someone who would have lost their life was spared because you gave us your blood. Someone’s quality of life was improved because you gave us your blood. We were able to help many because you gave us your blood. That’s pretty remarkable, and so are you. Thank you!",
         };
         console.log("DATE", props.location.state.collectionDate);
         // Code to send email

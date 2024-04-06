@@ -32,7 +32,7 @@ function GetInfoFromAadhar(aadharno){
       },
       "4597 5546 4656": {
         Name: "Ruksarbee Shaikh",
-        Email: "vu1f2021029@pvppcoe.ac.in",
+        Email: "vu1f2021035@pvppcoe.ac.in",
         Age: 21,
       },
       "4597 5546 4657": {
@@ -50,10 +50,11 @@ function GetInfoFromAadhar(aadharno){
         Email: "vu1f2021002@pvppcoe.ac.in",
         Age: 35,
       },
+
       "4597 5546 4660": {
         Name: "Ashif Mondal",
-        Email: "vu1f2021009.ac.in",
-        Age: 45,
+        Email: "vu1f2021009@pvppcoe.ac.in",
+        Age: 21,
       }
     };
 
